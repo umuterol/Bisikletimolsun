@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="usersPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="635.0" prefWidth="1187.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.usersController">
+   <children>
+      <Label layoutX="379.0" layoutY="10.0" prefHeight="61.0" prefWidth="262.0" styleClass="header-label" stylesheets="@../css/application.css" text="KULLANICILAR" textFill="#9114ff" AnchorPane.leftAnchor="379.0" AnchorPane.topAnchor="15.0">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tablewwUsers" focusTraversable="false" layoutY="104.0" onMouseClicked="#tableUser_clk" prefHeight="524.0" prefWidth="1260.0" stylesheets="@../css/application.css" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="280.0" AnchorPane.topAnchor="120.0">
+         <columns>
+            <TableColumn fx:id="clmTc" prefWidth="180.0" text="TC" />
+            <TableColumn fx:id="clmName" prefWidth="200.0" text="ADI" />
+            <TableColumn fx:id="clmSurname" prefWidth="200.0" text="SOYADI" />
+            <TableColumn fx:id="clmStatus" minWidth="0.0" prefWidth="211.0" text="DURUM" />
+            <TableColumn fx:id="clmPhone" minWidth="0.0" prefWidth="212.800048828125" text="PHONE" />
+            <TableColumn prefWidth="230.0" />
+         </columns>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </TableView>
+      <TextField fx:id="searchTxt" layoutX="14.0" layoutY="72.0" prefHeight="26.0" prefWidth="429.0" promptText="ARA" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="743.4" AnchorPane.topAnchor="80.0" />
+      <Button fx:id="searchBtn" layoutX="453.0" layoutY="71.0" mnemonicParsing="false" onMouseClicked="#searchBtnClk" prefHeight="26.0" prefWidth="33.0" styleClass="searchBtn" stylesheets="@../css/application.css" AnchorPane.rightAnchor="699.6" AnchorPane.topAnchor="79.0">
+         <graphic>
+            <ImageView fitHeight="17.0" fitWidth="18.0">
+               <image>
+                  <Image url="@../images/search.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ComboBox fx:id="cmbStatus" layoutX="664.0" layoutY="71.0" onAction="#cmbAction" prefWidth="150.0" promptText="Hepsi" styleClass="loginButon" stylesheets="@../css/application.css" AnchorPane.rightAnchor="372.6" AnchorPane.topAnchor="80.0" />
+      <Button fx:id="refreshBtn" layoutX="857.0" layoutY="70.0" mnemonicParsing="false" onMouseClicked="#refreshBtnClk" prefHeight="26.0" prefWidth="33.0" styleClass="searchBtn" stylesheets="@../css/application.css" AnchorPane.rightAnchor="295.6" AnchorPane.topAnchor="80.0">
+         <graphic>
+            <ImageView fitHeight="17.0" fitWidth="18.0">
+               <image>
+                  <Image url="@../images/refresh.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

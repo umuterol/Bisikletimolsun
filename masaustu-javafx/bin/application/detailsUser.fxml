@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="510.0" styleClass="detailsBg" stylesheets="@../css/application.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.detailsUserController">
+   <children>
+      <Label alignment="CENTER_RIGHT" layoutX="29.0" layoutY="84.0" prefHeight="27.0" prefWidth="130.0" styleClass="TextField" stylesheets="@../css/application.css" text="Kullanıcı TC  :" AnchorPane.rightAnchor="350.6">
+         <font>
+            <Font name="Ebrima" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="29.0" layoutY="119.0" prefHeight="27.0" prefWidth="130.0" styleClass="TextField" stylesheets="@../css/application.css" text="Adı  :" AnchorPane.rightAnchor="350.6">
+         <font>
+            <Font name="Ebrima" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="29.0" layoutY="153.0" prefHeight="27.0" prefWidth="130.0" styleClass="TextField" stylesheets="@../css/application.css" text="Soyadı  :" AnchorPane.rightAnchor="350.6">
+         <font>
+            <Font name="Ebrima" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="29.0" layoutY="220.0" prefHeight="27.0" prefWidth="130.0" styleClass="TextField" stylesheets="@../css/application.css" text="E-mail  :" AnchorPane.rightAnchor="350.6">
+         <font>
+            <Font name="Ebrima" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="29.0" layoutY="297.0" prefHeight="27.0" prefWidth="130.0" styleClass="TextField" stylesheets="@../css/application.css" text="Durum  :" AnchorPane.rightAnchor="350.6">
+         <font>
+            <Font name="Ebrima" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="29.0" layoutY="256.0" prefHeight="27.0" prefWidth="130.0" styleClass="TextField" stylesheets="@../css/application.css" text="Doğum Tarihi  :" AnchorPane.rightAnchor="350.6">
+         <font>
+            <Font name="Ebrima" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="29.0" layoutY="186.0" prefHeight="27.0" prefWidth="130.0" styleClass="TextField" stylesheets="@../css/application.css" text="Telefon  :" AnchorPane.rightAnchor="350.6">
+         <font>
+            <Font name="Ebrima" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tcTxt" disable="true" layoutX="172.0" layoutY="84.0" prefHeight="26.0" prefWidth="235.0" promptText="................." stylesheets="@../css/application.css">
+         <styleClass>
+            <String fx:value="TextField" />
+            <String fx:value="text-field" />
+            <String fx:value="loginButon" />
+         </styleClass>
+      </TextField>
+      <TextField fx:id="nameTxt" disable="true" layoutX="172.0" layoutY="119.0" prefHeight="26.0" prefWidth="235.0" promptText="................." stylesheets="@../css/application.css">
+         <styleClass>
+            <String fx:value="TextField" />
+            <String fx:value="text-field" />
+            <String fx:value="loginButon" />
+         </styleClass>
+      </TextField>
+      <TextField fx:id="surnameTxt" disable="true" layoutX="172.0" layoutY="153.0" prefHeight="26.0" prefWidth="235.0" promptText="................." stylesheets="@../css/application.css">
+         <styleClass>
+            <String fx:value="TextField" />
+            <String fx:value="text-field" />
+            <String fx:value="loginButon" />
+         </styleClass>
+      </TextField>
+      <TextField fx:id="phoneTxt" disable="true" layoutX="172.0" layoutY="187.0" prefHeight="26.0" prefWidth="235.0" promptText="................." stylesheets="@../css/application.css">
+         <styleClass>
+            <String fx:value="TextField" />
+            <String fx:value="text-field" />
+            <String fx:value="loginButon" />
+         </styleClass>
+      </TextField>
+      <TextField fx:id="mailTxt" disable="true" layoutX="172.0" layoutY="220.0" prefHeight="26.0" prefWidth="235.0" promptText="................." stylesheets="@../css/application.css">
+         <styleClass>
+            <String fx:value="TextField" />
+            <String fx:value="text-field" />
+            <String fx:value="loginButon" />
+         </styleClass>
+      </TextField>
+      <TextField fx:id="birthTxt" disable="true" layoutX="172.0" layoutY="256.0" prefHeight="26.0" prefWidth="235.0" promptText="................." stylesheets="@../css/application.css">
+         <styleClass>
+            <String fx:value="TextField" />
+            <String fx:value="text-field" />
+            <String fx:value="loginButon" />
+         </styleClass>
+      </TextField>
+      <ComboBox fx:id="cmbStatus" disable="true" layoutX="172.0" layoutY="297.0" prefHeight="26.0" prefWidth="235.0" style="-fx-background-radius: 20;" styleClass="TextField" stylesheets="@../css/application.css" />
+      <Button fx:id="updateBtn" layoutX="266.0" layoutY="360.0" mnemonicParsing="false" onMouseClicked="#updateBtnClk" styleClass="blue" stylesheets="@../css/application.css" text="GÜNCELLE" />
+      <Button fx:id="cancelBtn" layoutX="361.0" layoutY="360.0" mnemonicParsing="false" onMouseClicked="#cancelBtnClk" styleClass="red" stylesheets="@../css/application.css" text="İPTAL" />
+      <Button fx:id="saveBtn" layoutX="424.0" layoutY="360.0" mnemonicParsing="false" onMouseClicked="#saveBtnClk" styleClass="green" stylesheets="@../css/application.css" text="KAYDET" />
+      <Label fx:id="succesLbl" layoutX="191.0" layoutY="59.0" prefHeight="18.0" prefWidth="127.0" text="Başarıyla güncellendi ." textFill="#4dcc3c" visible="false" />
+      <Label fx:id="errorLbl" layoutX="201.0" layoutY="59.0" prefHeight="18.0" prefWidth="106.0" text="Güncellenemedi !" textFill="#ff0404" visible="false" />
+      <Label layoutX="211.0" prefHeight="62.0" prefWidth="127.0" styleClass="header-label" stylesheets="@../css/application.css" text="DETAY" textFill="#9114ff">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

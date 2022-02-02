@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorMain" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="635.0" prefWidth="1187.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.mainController">
+   <children>
+      <VBox prefHeight="635.0" prefWidth="256.0" style="-fx-background-color: #4C5B5A;" styleClass="vBox" stylesheets="@../css/application.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane prefHeight="221.0" prefWidth="270.0">
+               <children>
+                  <ImageView fitHeight="88.0" fitWidth="230.0" layoutX="27.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/bisikletimolsun2.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Button fx:id="homePageBtn" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onMouseClicked="#clkk2" prefHeight="46.0" prefWidth="270.0" styleClass="homePageBtn" stylesheets="@../css/application.css" text="BİSİKLETLER" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/bicycles.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btn3" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onMouseClicked="#clkk" prefHeight="46.0" prefWidth="270.0" styleClass="homePageBtn" stylesheets="@../css/application.css" text="KULLANICILAR" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/users.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="drivesBtn" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onMouseClicked="#drivesBtnClk" prefHeight="46.0" prefWidth="270.0" styleClass="homePageBtn" stylesheets="@../css/application.css" text="SÜRÜŞLER" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/drives.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </VBox>
+      <AnchorPane fx:id="anchorBycs" prefHeight="635.0" prefWidth="931.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="256.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </AnchorPane>
+   </children>
+</AnchorPane>

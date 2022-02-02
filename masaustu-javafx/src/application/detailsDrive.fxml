@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="510.0" styleClass="detailsBg" stylesheets="@../css/application.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.detailsDriveController">
+   <children>
+      <Label alignment="CENTER_RIGHT" layoutX="69.0" layoutY="90.0" prefHeight="10.0" prefWidth="110.0" styleClass="TextField" stylesheets="@../css/application.css" text="Sürüş ID  :" AnchorPane.rightAnchor="330.6">
+         <font>
+            <Font name="Ebrima" size="13.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="69.0" layoutY="125.0" prefHeight="10.0" prefWidth="110.0" styleClass="TextField" stylesheets="@../css/application.css" text="Kullanıcı TC  :" AnchorPane.rightAnchor="330.6">
+         <font>
+            <Font name="Ebrima" size="13.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="69.0" layoutY="157.0" prefHeight="10.0" prefWidth="110.0" styleClass="TextField" stylesheets="@../css/application.css" text="Bisiklet ID  :" AnchorPane.rightAnchor="330.6">
+         <font>
+            <Font name="Ebrima" size="13.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="69.0" layoutY="188.0" prefHeight="10.0" prefWidth="110.0" styleClass="TextField" stylesheets="@../css/application.css" text="Tutar  :" AnchorPane.rightAnchor="330.6">
+         <font>
+            <Font name="Ebrima" size="13.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="69.0" layoutY="222.0" prefHeight="10.0" prefWidth="110.0" styleClass="TextField" stylesheets="@../css/application.css" text="Başlama Tarihi  :" AnchorPane.rightAnchor="330.6">
+         <font>
+            <Font name="Ebrima" size="13.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="70.0" layoutY="258.0" prefHeight="10.0" prefWidth="110.0" styleClass="TextField" stylesheets="@../css/application.css" text="Bitiş Tarihi :" AnchorPane.rightAnchor="329.6">
+         <font>
+            <Font name="Ebrima" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="idTxt" disable="true" layoutX="188.0" layoutY="90.0" prefHeight="15.0" prefWidth="235.0" promptText="................." stylesheets="@../css/application.css">
+         <styleClass>
+            <String fx:value="TextField" />
+            <String fx:value="text-field" />
+            <String fx:value="loginButon" />
+         </styleClass>
+      </TextField>
+      <TextField fx:id="UserTcTxt" disable="true" layoutX="188.0" layoutY="122.0" prefHeight="15.0" prefWidth="235.0" promptText="................." stylesheets="@../css/application.css">
+         <styleClass>
+            <String fx:value="TextField" />
+            <String fx:value="text-field" />
+            <String fx:value="loginButon" />
+         </styleClass>
+      </TextField>
+      <TextField fx:id="bicycle_idTxt" disable="true" layoutX="187.0" layoutY="154.0" prefHeight="15.0" prefWidth="235.0" promptText="................." stylesheets="@../css/application.css">
+         <styleClass>
+            <String fx:value="TextField" />
+            <String fx:value="text-field" />
+            <String fx:value="loginButon" />
+         </styleClass>
+      </TextField>
+      <TextField fx:id="finish_timeTxt" disable="true" layoutX="188.0" layoutY="258.0" prefHeight="15.0" prefWidth="235.0" promptText="................." stylesheets="@../css/application.css">
+         <styleClass>
+            <String fx:value="TextField" />
+            <String fx:value="text-field" />
+            <String fx:value="loginButon" />
+         </styleClass>
+      </TextField>
+      <TextField fx:id="start_timeTxt" disable="true" layoutX="187.0" layoutY="222.0" prefHeight="15.0" prefWidth="235.0" promptText="................." stylesheets="@../css/application.css">
+         <styleClass>
+            <String fx:value="TextField" />
+            <String fx:value="text-field" />
+            <String fx:value="loginButon" />
+         </styleClass>
+      </TextField>
+      <ImageView fitHeight="144.0" fitWidth="89.0" layoutX="424.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/detailsBackground.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="211.0" prefHeight="62.0" prefWidth="127.0" styleClass="header-label" stylesheets="@../css/application.css" text="DETAY" textFill="#9114ff">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="70.0" layoutY="293.0" prefHeight="10.0" prefWidth="110.0" styleClass="TextField" stylesheets="@../css/application.css" text="Durum :">
+         <font>
+            <Font name="Ebrima" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="statusTxt" disable="true" layoutX="187.0" layoutY="290.0" prefHeight="15.0" prefWidth="235.0" promptText="................." stylesheets="@../css/application.css">
+         <styleClass>
+            <String fx:value="TextField" />
+            <String fx:value="text-field" />
+            <String fx:value="loginButon" />
+         </styleClass>
+      </TextField>
+      <Label alignment="CENTER_RIGHT" layoutX="70.0" layoutY="325.0" prefHeight="10.0" prefWidth="110.0" styleClass="TextField" stylesheets="@../css/application.css" text="Sürüş Süresi :">
+         <font>
+            <Font name="Ebrima" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="minuteTxt" disable="true" layoutX="188.0" layoutY="322.0" prefHeight="15.0" prefWidth="235.0" promptText="................." stylesheets="@../css/application.css">
+         <styleClass>
+            <String fx:value="TextField" />
+            <String fx:value="text-field" />
+            <String fx:value="loginButon" />
+         </styleClass>
+      </TextField>
+      <TextField fx:id="payTxt" disable="true" layoutX="188.0" layoutY="185.0" prefHeight="15.0" prefWidth="235.0" promptText="................." stylesheets="@../css/application.css">
+         <styleClass>
+            <String fx:value="TextField" />
+            <String fx:value="text-field" />
+            <String fx:value="loginButon" />
+         </styleClass>
+      </TextField>
+      <Button fx:id="byc_location" layoutX="302.0" layoutY="360.0" mnemonicParsing="false" onMouseClicked="#locationBtnClk" styleClass="blue" stylesheets="@../css/application.css" text="Şuanki Konum" />
+      <Button fx:id="back" layoutX="238.0" layoutY="360.0" mnemonicParsing="false" onMouseClicked="#backBtnClk" styleClass="red" stylesheets="@../css/application.css" text="KONUMU KAPAT" />
+      <ImageView fx:id="location_img" fitHeight="340.0" fitWidth="422.0" layoutX="11.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

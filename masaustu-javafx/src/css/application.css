@@ -1,0 +1,197 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.homePageBtn{
+	-fx-background-color:#4C5B5A ;
+	
+	
+}
+.homePageBtn:hover{
+	
+	-fx-background-color:#8B9796;
+	
+	
+}
+.homePageBtn:focused{
+	-fx-background-color:linear-gradient(to left ,#ffc107 0%, #00bcd4 100%);
+	-fx-border-color:#00bcd4;
+	-fx-border-width:0 0 0 10px;
+}
+.vBox{
+	-fx-background-color:  #4C5B5A;
+	
+}
+.imageBtn:pressed{
+	-fx-cursor:default;
+}
+	
+.header-label {
+	-fx-text-fill: linear-gradient(#00bcd4 0%, #424141 100%);
+}	
+	
+.searchBtn {
+	-fx-background-radius:5 ;
+	-fx-background-color:linear-gradient(#fff 0%, #41656a 100%); 
+}
+.searchBtn:pressed {
+	-fx-background-color:linear-gradient(#fff 0%, black 100%); 
+}
+	
+.loginButon{
+	-fx-background-radius:20 ;
+	-fx-background-color:linear-gradient(#fff 0%, #41656a 100%); 
+	
+}
+.loginButon:pressed {
+	-fx-background-color:linear-gradient(#fff 0%, black 100%); 
+}
+.loginButon:hover{
+	-fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.10), 15.0 , 0.0 , 0.0 ,15.0);
+}
+	
+	
+	
+	
+	 
+	.table-view{
+   -fx-background-color: transparent;
+   -fx-border-color:white;
+}
+
+
+.table-view:focused{
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background{
+    -fx-background-color: linear-gradient(#00bcd4 0%, #424141 100%);
+}
+ 
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: black;
+}
+
+.table-view .column-header  {
+    -fx-background-color: transparent;
+    -fx-border-style:none;
+}
+.table-column{
+    -fx-alignment: CENTER;
+    -fx-border-style:dashed   ;
+ }
+
+.table-view .table-cell{
+    -fx-text-fill: black;
+}
+
+
+.table-row-cell:selected {
+ 	 -fx-background-color: whitesmoke; 
+    
+    -fx-background-insets: 0;
+    -fx-background-radius: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+.table-row-cell {
+    -fx-cell-size: 50px;
+	-fx-background-color: white;
+  
+   
+}
+
+
+
+.text-field {
+    -fx-background-color: #a9a9a9 , white , white;
+    -fx-background-insets: 0 -1 -1 -1, 0 0 0 0, 0 -1 3 -1;
+}
+
+.text-field:focused {
+    -fx-background-color: #a9a9a9 , white , white;
+    -fx-background-insets: 0 -1 -1 -1, 0 0 0 0, 0 -1 3 -1;
+}
+
+.text-field:selected {
+	-fx-background-color:#00bcd4 ;
+	-fx-border-color:#00bcd4;
+}
+
+
+.green {
+    -fx-background-color:
+        linear-gradient(#f0ff35, #a9ff00),
+        radial-gradient(center 50% -40%, radius 200%, #b8ee36 45%, #80c800 50%);
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: #395306;
+}
+.green:pressed {
+	 -fx-background-color:
+        linear-gradient(#f0ff35, #a9ff00),
+        radial-gradient(center 60% -20%, radius 200%, #b8ee36 45%, #80c800 50%);
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: #395306;
+}
+
+.red {
+    -fx-background-color:
+        linear-gradient(#f0ff35, #D36565),
+        radial-gradient(center 50% -40%, radius 200%, #D36565 45%, #E03519 50%);
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: #395306;
+}
+.red:pressed {
+	 -fx-background-color:
+        linear-gradient(#f0ff35, #a9ff00),
+        radial-gradient(center 60% -20%, radius 200%, #D36565 45%, #E03519 50%);
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: #395306;
+}
+
+
+.blue {
+    -fx-background-color:
+        linear-gradient(#f0ff35, #D36565),
+        radial-gradient(center 50% -40%, radius 200%, #BBEBEE 45%, #0CADCF 50%);
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: #395306;
+}
+.blue:pressed {
+	 -fx-background-color:
+        linear-gradient(#f0ff35, #a9ff00),
+        radial-gradient(center 60% -20%, radius 200%, #BBEBEE 45%, #0CADCF 50%);
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: #395306;
+}
+ 
+ .TextField{
+	-fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.10), 15.0 , 0.0 , 0.0 ,15.0);
+}
+
+.detailsBg{
+	-fx-background-color: linear-gradient(white 0%, #CDF6F3 100%);
+	 -fx-background-size: 100% 100%;
+}
+
+ 
+

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="635.0" prefWidth="1187.0" stylesheets="@../css/application.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.bycAddController">
+   <children>
+      <Label layoutX="379.0" layoutY="10.0" prefHeight="61.0" prefWidth="262.0" styleClass="header-label" stylesheets="@../css/application.css" text="BİSİKLET EKLE" textFill="#9114ff">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnFile" layoutX="800.0" layoutY="210.0" mnemonicParsing="false" onAction="#fileChooser" styleClass="searchBtn" stylesheets="@../css/application.css" text="Resim seç">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <ImageView fx:id="bycImg" fitHeight="150.0" fitWidth="200.0" layoutX="642.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/new_img.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="ownerTxt" layoutX="628.0" layoutY="277.0" prefHeight="26.0" prefWidth="235.0" promptText="................." />
+      <TextField fx:id="priceTxt" layoutX="628.0" layoutY="357.0" prefHeight="26.0" prefWidth="235.0" promptText=".................." />
+      <Label layoutX="556.0" layoutY="277.0" prefHeight="27.0" prefWidth="71.0" text="Sahibi  :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="556.0" layoutY="356.0" prefHeight="27.0" prefWidth="71.0" text="Fiyatı  :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="bycAddBtn" layoutX="613.0" layoutY="478.0" mnemonicParsing="false" onMouseClicked="#bycAddBtnClk" prefHeight="50.0" prefWidth="186.0" styleClass="green" stylesheets="@../css/application.css" text="EKLE">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="26.0" fitWidth="28.0">
+               <image>
+                  <Image url="@../images/add_.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label fx:id="successLbl" layoutX="613.0" layoutY="529.0" opacity="0.69" prefHeight="18.0" prefWidth="186.0" style="-fx-background-color: #7CFC00;" text="                 KAYIT  EKLENDİ" visible="false" />
+      <Label fx:id="errorLbl" layoutX="613.0" layoutY="459.0" opacity="0.71" prefHeight="18.0" prefWidth="186.0" style="-fx-background-color: RED;" text="             KAYIT  EKLENEMEDİ" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tbwwMeeting" layoutX="25.0" layoutY="86.0" onMouseClicked="#tbwwClk" prefHeight="503.0" prefWidth="510.0" stylesheets="@../css/application.css" AnchorPane.bottomAnchor="46.0" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="86.0">
+        <columns>
+          <TableColumn fx:id="clmId" prefWidth="78.39999008178711" text="Randevu NO" />
+            <TableColumn fx:id="clmDate" prefWidth="155.1999969482422" text="TARİH" />
+          <TableColumn fx:id="clmUserId" minWidth="0.0" prefWidth="120.79998779296875" text="Kullanıcı TC" />
+            <TableColumn fx:id="clmImg" prefWidth="151.20001220703125" text="RESİM" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
