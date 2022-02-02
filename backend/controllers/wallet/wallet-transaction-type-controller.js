@@ -1,0 +1,13 @@
+const db = require('../../models');
+const model = db.wallet_transaction_type;
+const Controller = require("../Controller");
+const controller = new Controller(model);
+
+
+
+module.exports = {
+    create: controller.create,
+    getAllData: controller.getAllData,
+    updateData: controller.updateData,
+    destroyData: controller.destroyData,
+}
